@@ -1,9 +1,8 @@
-# PopTalk
-
-A dark-mode AI chat companion with a light-mode toggle, an animated background, and a playful chase-scene animation (a runner fleeing a neon spider) roaming the page.
+PopTalk 
+A dark mode AI chat companion with a light mode toggle, an animated background, and a playful chase scene animation (a runner fleeing a neon spider roaming the page x)
 
 ## Features
-- Chat UI with instant answers for common intents (time, jokes, math, day planning) and free-form conversation routed to a local AI model via [Ollama](https://ollama.com)
+- Chat UI with instant answers for common intents (time, jokes, math, day planning) and free form conversation routed to a local AI model via [Ollama](https://ollama.com)
 - Light/dark theme toggle (green neon in dark mode, pink neon in light mode)
 - Animated popcorn-shower background and a wandering chase-scene foreground animation
 - Falls back to a local rule-based bot automatically if no AI backend is available
