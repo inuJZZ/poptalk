@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PopTalk — Your AI Chat Companion</title>
+<link rel="stylesheet" href="css/style.css" />
+<script>
+  // set theme before paint to avoid a flash of the wrong mode
+  document.documentElement.dataset.theme = localStorage.getItem('poptalk_theme') || 'dark';
+</script>
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <canvas id="chase-canvas"></canvas>
+
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark">◈</span>
+        <span class="brand-name">Pop<em>Talk</em></span>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-item active" data-view="chat">
+          Chat
+        </button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="status-pill">
+          <span class="dot"></span> Online
+        </div>
+        <button id="clear-btn" class="ghost-btn">Clear Conversation</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="topbar-title">
+          <h1 id="view-title">Chat</h1>
+          <p id="view-subtitle">talk2meStranger :)</p>
+        </div>
+        <div class="topbar-actions">
+          <button id="theme-toggle" class="badge toggle-btn" aria-label="Toggle light/dark mode">
+            <span id="theme-icon">⋆.˚ ☾⭒.</span> <span id="theme-label">Dark Mode</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- CHAT VIEW -->
+      <section class="view" id="view-chat">
+        <div class="chat-window" id="chat-window">
+          <div class="msg bot">
+            <div class="avatar bot-avatar">P</div>
+            <div class="bubble">
+              Hey there stranger, i am POP, you found me, so let hear it, what can i help you with today?
+            </div>
+          </div>
+        </div>
+
+        <form class="composer" id="composer">
+          <input type="text" id="chat-input" autocomplete="off" placeholder="Message PopTalk…" />
+          <button type="submit" class="send-btn" aria-label="Send">➤</button>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/background.js"></script>
+  <script src="js/chase.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
