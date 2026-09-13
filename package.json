@@ -1,0 +1,17 @@
+{
+  "name": "poptalk",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "PopTalk — AI chat companion & day planner",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^8.0.0"
+  }
+}
