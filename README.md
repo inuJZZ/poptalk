@@ -6,7 +6,7 @@ It's a full-stack, self-hosted alternative to the usual cloud chat products. No 
 
 ---
 
-## ✨ Features
+##  Features
 
 - **Conversational AI, powered locally.** General questions get routed to a locally hosted LLM (via [Ollama](https://ollama.com)), so there's zero API cost and your data stays on your machine.
 - **Hybrid response engine.** Deterministic intents (time, jokes, quick math, day-planning requests) get resolved instantly by a lightweight rule-based layer, so common interactions stay snappy without waiting on the model.
@@ -18,7 +18,7 @@ It's a full-stack, self-hosted alternative to the usual cloud chat products. No 
 
 ---
 
-## 🧱 Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -55,7 +55,7 @@ PopTalk works out of the box using its local rule-based responder. To get full c
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 poptalk/
